@@ -19,6 +19,8 @@ cask "omniwm@canary" do
   app "OmniWM.app"
   binary "#{appdir}/OmniWM.app/Contents/MacOS/omniwmctl"
 
+  uninstall quit: "com.barut.OmniWM"
+
   zap trash: [
     "~/.config/omniwm",
     "~/.local/state/omniwm",
